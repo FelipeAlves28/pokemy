@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/page-register.css">
+    <title>Pokemy - Cadastro</title>
+</head>
+
+<body class="page-register">
+    <div class="container">
+        <header class="header">
+            <div class="nav-bar-pokemy">
+                <div class="back-logo">
+                    <a href="./index.html">
+                        <img src="assets/arrow.svg" alt="arrow-back">
+                    </a>
+                </div>
+                <div class="presentation-header">
+                    <h1>Pokemy</h1>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <form action="#">
+                <fieldset>
+                    <legend>Poke Dados</legend>
+                    <div class="input-block">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" placeholder="Digite o Nome do pokemon">
+                    </div>
+
+                    <div class="input-block">
+                        <label for="url">Foto (Url)</label>
+                        <input type="url" name="url" placeholder="https://url">
+                    </div>
+
+                    <div class="select-block">
+                        <label for="type">Tipo</label>
+                        <select name="type">
+                            <option value="#"> Selecione o tipo do Pokemon</option>
+                            <option value="0">Fogo</option>
+                            <option value="1">Inseto</option>
+                            <option value="2">Dragão</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea-block">
+                        <label for="describe">Descrição</label>
+                        <textarea name="describe" name="describe" placeholder="Descreva sobre o pokemon"></textarea>
+                    </div>
+
+                    <div class="button-block">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </main>
+
+    </div>
+</body>
+
+</html>

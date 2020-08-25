@@ -1,0 +1,138 @@
+body {
+    background: var(--color-primary);
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .header {
+    background: var(--color-background);
+}
+
+.container .header .nav-bar-pokemy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem 3rem 1rem
+}
+
+.container .header .nav-bar-pokemy .presentation-header {
+    margin-left: 2rem;
+}
+
+.container .header .presentation-header h1 {
+    color: var(--color-white);
+    font-family: 'Staatliches';
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+main {
+    max-width: 95%;
+    margin: 1.5rem auto;
+}
+
+main form {
+    background: var(--color-white);
+    padding: 3rem 1rem;
+    border-radius: 5px;
+}
+
+main form fieldset {
+    border: none;
+}
+
+main form fieldset legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: var(--color-title);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+main form fieldset .button-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form fieldset .button-block button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-white);
+    border: none;
+    background-color: var(--color-button-light);
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+main form fieldset .button-block button:hover {
+    background: var(--color-button-dark);
+}
+
+main form fieldset .input-block, main form fieldset .select-block, main form fieldset .textarea-block {
+    margin: 2rem 0 2rem 0;
+}
+
+main form fieldset .input-block input, main form fieldset .textarea-block textarea, main form fieldset .select-block select {
+    width: 100%;
+    background: var(--color-primary);
+    border-radius: 5px;
+    border: none;
+    margin-top: 1rem;
+    height: 3rem;
+    font-family: 'Roboto';
+}
+
+main form fieldset .textarea-block textarea {
+    height: 10rem;
+    resize: vertical;
+}
+
+::placeholder {
+    padding: 1rem;
+}
+
+@media(min-width:1100px) {
+    main {
+        max-width: 40%;
+    }
+    main form fieldset legend {
+        justify-content: end;
+        font-size: 25px;
+    }
+    .container .header .nav-bar-pokemy {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        padding: 10px 100px 100px 100px;
+    }
+    .container .header .nav-bar-pokemy .presentation-header {
+        margin-top: 100px;
+    }
+    .container .header .presentation-header h1 {
+        font-size: 80px;
+    }
+    .container .header .back-logo{
+        margin-bottom: 120px;
+    }
+    main form fieldset .button-block {
+        justify-content: flex-end;
+    }
+    main form fieldset .button-block button{
+        width: 30%;
+    }
+}

@@ -1,0 +1,16 @@
+:root {
+    --color-background: #FF574D;
+    --color-primary: #F0F0F7;
+    --color-button-light: #FFAE00;
+    --color-button-dark: #ff8c00;
+    --color-title: #FFB6C1;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-border: #dcdcdc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,112 @@
+body {
+    background: var(--color-primary);
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .header {
+    background: var(--color-background);
+}
+
+.container .header .nav-bar-pokemy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem 3rem 1rem
+}
+
+.container .header .nav-bar-pokemy .presentation-header {
+    margin-left: 2rem;
+}
+
+.container .header .presentation-header h1 {
+    color: var(--color-white);
+    font-family: 'Staatliches';
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+main {
+    max-width: 95%;
+    margin: 1.5rem auto;
+}
+
+main, main .cards .card .info-poke {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .cards .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-white);
+    border-radius: 5px;
+    margin-top: 1rem;
+    height: 35rem;
+    padding: 10px;
+}
+main .cards .card .info-poke,
+main .cards .card .info-poke h4 {
+    margin-top: 1rem;
+}
+
+main .cards .card h3 {
+    color: var(--color-title);
+}
+
+main .cards .card p {
+    text-align: center;
+    margin: 1rem 30px 0 20px;
+}
+
+main .cards .card img {
+    width: 18rem;
+    height: 20rem;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+}
+
+@media(min-width:1100px) {
+    .container .header .nav-bar-pokemy {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        padding: 10px 100px 100px 100px;
+    }
+    .container .header .nav-bar-pokemy .presentation-header {
+        margin-top: 100px;
+    }
+    .container .header .presentation-header h1 {
+        font-size: 80px;
+    }
+    .container .header .back-logo {
+        margin-bottom: 120px;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 90%;
+    }
+    main h2 {
+        margin-bottom: 20px;
+    }
+    main .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    main .cards .card {
+        margin-top: 0;
+        width: 310px;
+    }
+}

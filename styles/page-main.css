@@ -1,0 +1,121 @@
+body{
+    background-color: var(--color-background);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-container h1 {
+    color: var(--color-white);
+    font-family: 'Staatliches';
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.presentation-container h2, p, a {
+    color: var(--color-white);
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.presentation-container h2, .presentation-container h2+h1+h2 {
+    font-size: 1.2rem;
+}
+
+.container {
+    margin: 0 2rem;
+}
+
+.container, .container .presentation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.container .logo-container {
+    width: 18rem;
+    height: 20rem;
+}
+
+.container .button-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--color-button-light);
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    transition: 0.2s;
+}
+
+.container .button-container a:hover {
+    background-color: var(--color-button-dark);
+}
+
+.container .button-container a span {
+    margin-left: 0.5rem;
+}
+
+.container .button-cadastro {
+    margin-top: 1.5rem;
+}
+
+.container .button-cadastro a {
+    text-decoration: none;
+}
+
+@media(max-width:400px) {
+    :root {
+        font-size: 80%;
+    }
+}
+
+@media(min-width:1100px) {
+    body {
+        margin: auto 100px auto 200px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 600px;
+        gap: 10px;
+    }
+    .container .logo-container {
+        width: 600px;
+        height: 600px;
+        margin: 0 40px 0 40px;
+    }
+    .container .presentation-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin: 0 auto;
+        text-align: initial;
+    }
+    .container .button-container a {
+        padding: 25px;
+        font-size: 22px;
+    }
+    .container .button-container {
+        display: flex;
+        margin-top: -120px;
+    }
+    .container .button-cadastro {
+        margin: 0 0 0 10px;
+    }
+    .presentation-container {
+        margin: auto 20px;
+    }
+    .presentation-container h1 {
+        font-size: 120px;
+    }
+    .presentation-container h2, .presentation-container h2+h1+h2 {
+        font-size: 30px;
+        margin-right: 15px;
+    }
+}
