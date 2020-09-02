@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/page-register.css">
+
     <title>Pokemy - Cadastro</title>
 </head>
 
@@ -16,7 +17,7 @@
         <header class="header">
             <div class="nav-bar-pokemy">
                 <div class="back-logo">
-                    <a href="./index.html">
+                    <a href="/">
                         <img src="assets/arrow.svg" alt="arrow-back">
                     </a>
                 </div>
@@ -27,23 +28,23 @@
         </header>
 
         <main>
-            <form action="#">
+            <form action="/save-poke" id="create-poke" method="POST">
                 <fieldset>
                     <legend>Poke Dados</legend>
                     <div class="input-block">
                         <label for="name">Nome</label>
-                        <input type="text" name="name" placeholder="Digite o Nome do pokemon">
+                        <input type="text" name="name" placeholder="Digite o Nome do pokemon" required>
                     </div>
 
                     <div class="input-block">
-                        <label for="url">Foto (Url)</label>
-                        <input type="url" name="url" placeholder="https://url">
+                        <label for="photo">Foto (Url)</label>
+                        <input type="url" name="photo" placeholder="https://url" required>
                     </div>
 
-                    <div class="select-block">
+                    <div id="select-block">
                         <label for="type">Tipo</label>
-                        <select name="type">
-                            <option value="#"> Selecione o tipo do Pokemon</option>
+                        <select name="type" required>
+                            <option value=""> Selecione o tipo do Pokemon</option>
                             <option value="0">Fogo</option>
                             <option value="1">Inseto</option>
                             <option value="2">Dragão</option>
@@ -51,12 +52,13 @@
                     </div>
 
                     <div class="textarea-block">
-                        <label for="describe">Descrição</label>
-                        <textarea name="describe" name="describe" placeholder="Descreva sobre o pokemon"></textarea>
+                        <label for="description">Descrição</label>
+                        <textarea name="describe" name="description" placeholder="Descreva sobre o pokemon"
+                            required></textarea>
                     </div>
 
                     <div class="button-block">
-                        <button type="submit">Cadastrar</button>
+                        <button type="submit" form="create-poke">Cadastrar</button>
                     </div>
 
                 </fieldset>
@@ -65,5 +67,7 @@
 
     </div>
 </body>
+<script src="../../public/scripts/feature-pokemon.js"></script>
+<script src="../../public/scripts/main.js"></script>
 
 </html>

@@ -1,0 +1,31 @@
+{
+  "name": "pokemy",
+  "version": "1.0.0",
+  "description": "Development of a project for a register of favorite pokemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeAlves28/pokemy.git"
+  },
+  "author": "Felipe Luiz Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FelipeAlves28/pokemy/issues"
+  },
+  "homepage": "https://github.com/FelipeAlves28/pokemy#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "4.17.1",
+    "jsdom": "^16.4.0",
+    "nunjucks": "3.2.2",
+    "sqlite-async": "1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4",
+    "browserify": "16.5.2"
+  }
+}

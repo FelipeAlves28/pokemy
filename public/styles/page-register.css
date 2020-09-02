@@ -83,11 +83,11 @@ main form fieldset .button-block button:hover {
     background: var(--color-button-dark);
 }
 
-main form fieldset .input-block, main form fieldset .select-block, main form fieldset .textarea-block {
+main form fieldset .input-block, main form fieldset #select-block, main form fieldset .textarea-block {
     margin: 2rem 0 2rem 0;
 }
 
-main form fieldset .input-block input, main form fieldset .textarea-block textarea, main form fieldset .select-block select {
+main form fieldset .input-block input, main form fieldset .textarea-block textarea, main form fieldset #select-block select {
     width: 100%;
     background: var(--color-primary);
     border-radius: 5px;

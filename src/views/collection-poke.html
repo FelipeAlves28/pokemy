@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/page-collection.css">
+    <title>Pokemy - Coleção</title>
+</head>
+
+<body class="page-register">
+    <div class="container">
+        <header class="header">
+            <div class="nav-bar-pokemy">
+                <div class="back-logo">
+                    <a href="/">
+                        <img src="assets/arrow.svg" alt="arrow-back">
+                    </a>
+                </div>
+                <div class="presentation-header">
+                    <h1>Pokemy</h1>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h2>Pokemons</h2>
+
+            {% if pokemons == "" %}
+            <p class="no-results">Nenhum Pokemon encontrado</p>
+            {% else %}
+            <div class="cards">
+                {% for pokemon in pokemons%}
+
+                <div class="card">
+                    <img src="{{pokemon.photo}}" alt="Pokemon Image">
+                    <div class="info-poke">
+                        <h3>{{pokemon.name}}</h3>
+                        <h4>{{pokemon.type}}</h4>
+                        <p>{{pokemon.description}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>
